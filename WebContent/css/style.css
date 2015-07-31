@@ -1,0 +1,666 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+	font-family: "Arial", sans-serif;
+	font-size: 13px;
+	color: #404040;
+	background: #e5e5e5;
+	line-height: 20px;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 34px;
+	text-align: left;
+	color: #404040;
+	padding-bottom: 10px;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: 1px solid #E7E8E9;
+	margin-bottom: 30px;
+	line-height: 34px;
+}
+
+h2,h2 a {
+	text-align: left;
+	line-height: 20px;
+	font-size: 18px;
+	color: #404040;
+	font-family: 'Open Sans', sans-serif;
+	padding: 15px 0 10px 0;
+	text-decoration: none;
+}
+
+#error_message {
+	color: #c3351d;
+	padding-left: 5px;
+	font-weight: bold;
+}
+
+span a {
+	color: #c3351d;
+	text-decoration: none !important;
+}
+
+a {
+	text-decoration: underline;
+	color: #8c8c8c;
+}
+
+a:hover {
+	color: #b7cb2c;
+}
+
+#profile {
+	height: 60px;
+	width: 60px;
+	float: right;
+	border-radius: 30px; /*round*/
+	margin: 15px 15px 10px 10px;
+	/*border-radius: 10px;square-round*/
+}
+
+#articleImage,#authorImage {
+	height: 125px;
+	width: 150px;
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	/*border-radius: 10px;square-round*/
+}
+
+#fullArticleImage,#fullAuthorImage {
+	height: 250px;
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#fullArticleImage {
+	width: 300px;
+}
+
+#fullAuthorImage {
+	width: 250px;
+	border-radius: 50px 50px 50px 40px;
+}
+
+#col-center {
+	float: center;
+	width: 70%;
+}
+
+#col-row {
+	height: 190px;
+	border-bottom: 1px solid #ddd;
+}
+
+#welcome {
+	font-weight: 600;
+	font-size: 24px;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+	color: #b7cb2c;
+}
+
+#logo {
+	float: left;
+	padding-left: 10px;
+}
+
+#breadcrumbs {
+	margin-bottom: 15px;
+}
+
+#breadcrumbs a {
+	color: #b7cb2c;
+}
+
+#breadcrumbs a:hover {
+	text-decoration: none;
+}
+
+#asterisk {
+	color: #b7cb2c;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+td {
+	vertical-align: middle;
+	border-collapse: separate;
+	border-spacing: 10px 50px;
+}
+
+.account-details {
+	width: 200px;
+	float: right;
+}
+
+header {
+	top: 0;
+	width: 100%;
+	height: 90px;
+	background-color: #222;
+	display: block;
+}
+
+.container {
+	width: 1000px;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: #fff;
+	margin: 0 auto;
+	box-shadow: 0px 0px 15px -3px #999;
+	padding: 40px 40px 30px 40px;
+}
+
+input {
+	margin: 5px;
+	width: 360px;
+	height: 25px;
+	color: #404040;
+	border: 1px solid;
+	border-color: #bdbdbd #d1d1d1 #d4d4d4;
+	border-radius: 2px;
+	position: relative;
+	padding: 0 6px 0 6px;
+}
+
+input[type=radio],input[type=checkbox] {
+	height: 15px;
+	width: 15px;
+}
+
+input[type=date] {
+	color: #404040;
+	border: 1px solid;
+	border-color: #bdbdbd #d1d1d1 #d4d4d4;
+	border-radius: 2px;
+	position: relative;
+	font-family: "Arial", sans-serif;
+}
+
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,input[type=date]:focus,select:focus,textarea:focus
+	{
+	border-color: #7dc9e2;
+	outline-color: #d7e9ef;
+	outline-offset: 0;
+}
+
+textarea {
+	margin: 5px;
+	width: 356px;
+	padding: 6px 10px 2px 6px;
+	color: #404040;
+	border: 1px solid;
+	border-color: #bdbdbd #d1d1d1 #d4d4d4;
+	border-radius: 2px;
+	position: relative;
+	font-family: "Arial", sans-serif;
+	resize: vertical;
+}
+
+select {
+	margin: 5px;
+	padding: 0 1px;
+	width: 373px;
+	height: 25px;
+	color: #404040;
+	background: #fff;
+	border: 1px solid;
+	border-color: #bdbdbd #d1d1d1 #d4d4d4;
+	border-radius: 2px;
+	position: relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+}
+
+.drop-down {
+	background: #fff
+		url(data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==)
+		no-repeat 97% 50%;
+}
+
+input[type=submit],input[type=button] {
+	margin-top: 20px;
+	margin-left: 10px;
+	height: 35px;
+	width: 90px;
+	float: right;
+}
+
+/*Adapted from http://www.cssflow.com/snippets/sign-up-form*/
+.proceed {
+	position: relative;
+	margin: 50px auto;
+	width: 280px;
+	padding: 33px 25px 29px;
+	background: white;
+	border-bottom: 1px solid #bdbdbd;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.proceed:before,.proceed:after {
+	content: '';
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	right: 0;
+	height: 10px;
+	background: inherit;
+	border-bottom: 1px solid #d2d2d2;
+	border-radius: 4px;
+}
+
+.proceed:after {
+	bottom: 3px;
+	border-color: #dcdcdc;
+}
+
+.proceed-title {
+	margin: -25px -25px 25px;
+	padding: 15px 25px;
+	line-height: 35px;
+	font-weight: 300;
+	color: #aaa;
+	text-align: center;
+	background: #f7f7f7;
+}
+
+.proceed-title:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: #c4e17f;
+	border-radius: 5px 5px 0 0;
+}
+
+.proceed-input {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 25px;
+	padding: 0 15px 2px;
+	font-size: 17px;
+	background: white;
+	border: 2px solid #ebebeb;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 -2px #ebebeb;
+	box-shadow: inset 0 -2px #ebebeb;
+}
+
+.proceed-input:focus {
+	border-color: #62c2e4;
+	outline: none;
+	-webkit-box-shadow: inset 0 -2px #62c2e4;
+	box-shadow: inset 0 -2px #62c2e4;
+}
+
+.lt-ie9 .proceed-input {
+	line-height: 48px;
+}
+
+.proceed-button {
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: 54px;
+	padding: 0;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	background: #abbf2a; /*  background: #00a3d9; -- blue */
+	border: 0;
+	border-bottom: 2px solid #8b9920; /*border-bottom: 2px solid #0086b3;*/
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-box-shadow: inset 0 -2px #8b9920;
+	/*-webkit-box-shadow: inset 0 -2px #0086b3;*/
+	box-shadow: inset 0 -2px #8b9920; /*box-shadow: inset 0 -2px #0086b3;*/
+}
+
+.proceed-button:active {
+	top: 1px;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.cancel {
+	position: relative;
+	margin: 50px auto;
+	width: 280px;
+	padding: 33px 25px 29px;
+	background: white;
+	border-bottom: 1px solid #bdbdbd;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.cancel:before,.cancel:after {
+	content: '';
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	right: 0;
+	height: 10px;
+	background: inherit;
+	border-bottom: 1px solid #d2d2d2;
+	border-radius: 4px;
+}
+
+.cancel:after {
+	bottom: 3px;
+	border-color: #dcdcdc;
+}
+
+.cancel-title {
+	margin: -25px -25px 25px;
+	padding: 15px 25px;
+	line-height: 35px;
+	font-weight: 300;
+	color: #aaa;
+	text-align: center;
+	background: #f7f7f7;
+}
+
+.cancel-title:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: #c4e17f;
+	border-radius: 5px 5px 0 0;
+}
+
+.cancel-input {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 25px;
+	padding: 0 15px 2px;
+	font-size: 17px;
+	background: white;
+	border: 2px solid #ebebeb;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 -2px #ebebeb;
+	box-shadow: inset 0 -2px #ebebeb;
+}
+
+.cancel-input:focus {
+	border-color: #62c2e4;
+	outline: none;
+	-webkit-box-shadow: inset 0 -2px #62c2e4;
+	box-shadow: inset 0 -2px #62c2e4;
+}
+
+.lt-ie9 .cancel-input {
+	line-height: 48px;
+}
+
+.cancel-button {
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: 54px;
+	padding: 0;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	background: #bdbdbd;
+	border: 0;
+	border-bottom: 2px solid #ababab;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-box-shadow: inset 0 -2px #ababab;
+	box-shadow: inset 0 -2px #ababab;
+}
+
+.cancel-button:active {
+	top: 1px;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/*http://cssglobe.com/pure-css3-post-tags/*/
+.tag li,.tag a {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	font-size: 11px;
+	display: block;
+}
+
+.tag a {
+	margin: 12px 0 0 12px;
+	padding: 0 10px 0 12px;
+	background: #b7cb2c;
+	color: #fff;
+	text-decoration: none;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.tag a:before {
+	content: "";
+	float: left;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent #b7cb2c transparent transparent;
+	border-style: solid;
+	border-width: 12px 12px 12px 0;
+}
+
+.tag a:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	float: left;
+	width: 4px;
+	height: 4px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #fff;
+	-moz-box-shadow: -1px -1px 2px #004977;
+	-webkit-box-shadow: -1px -1px 2px #004977;
+	box-shadow: -1px -1px 2px #004977;
+}
+
+/*.tag a:hover{background:#555;}	
+
+.tag a:hover:before{border-color:transparent #555 transparent transparent;}*/
+/*Adapted from: http://koen.kivits.com/articles/pure-css-menu/ */
+.onclick-menu {
+	float: right;
+	margin-top: 51px;
+}
+
+.onclick-menu:before {
+	content: "My Account";
+}
+
+.onclick-menu:focus { /* clicking on label should toggle the menu */
+	pointer-events: none;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+	/*  opacity is 1 in opened state (see below) */
+	opacity: 1;
+	visibility: visible;
+	/* don't let pointer-events affect descendant elements */
+	pointer-events: auto;
+}
+
+.onclick-menu-content {
+	position: absolute;
+	z-index: 1;
+	/* use opacity to fake immediate toggle */
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 1.0s;
+}
+
+/*
+Eye candy 
+( colors courtesy of https://kuler.adobe.com/try-color-theme-3350110 )
+*/
+/*.onclick-menu {
+	padding: 0;
+	margin: 0 0 1em 0;
+	outline: 0;
+}*/
+.onclick-menu:before {
+	padding: 5px 10px;
+	background-color: #444;
+	color: #8c8c8c;
+	border-radius: 5px;
+}
+
+.onclick-menu-content {
+	background-color: #b7cb2c;
+	width: auto; /*155px*/
+	margin-top: 19px;
+	margin-left: 0;
+	padding: 15px;
+}
+
+/* arrow for the expanding part */
+.onclick-menu-content:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid #b7cb2c;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: -10px;
+}
+
+.onclick-menu-content li {
+	color: #f2f5e9;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+/* style the buttons */
+.onclick-menu-content button {
+	background: transparent;
+	border: none;
+	color: inherit;
+	cursor: inherit;
+	outline: 0;
+	cursor: pointer;
+}
+
+.onclick-menu-content button:hover {
+	color: #8c8c8c;
+}
+
+.dashboard-button {
+	color: #f2f5e9;
+	position: fixed;
+	top: 170px;
+	left: -60px;
+	background-color: #b7cb2c;
+	width: 140px; /*155px*/
+	padding: 25px 0 10px 0;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 16px;
+	/*Adapted from: http://stackoverflow.com/questions/14233341/how-can-i-rotate-an-html-div-to-90-degrees*/
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+.dashboard-button:hover {
+	box-shadow: 0px 0px 15px -3px #999;
+}
+
+#dashboard-label {
+	font-size: 26px;
+	padding-top: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.dashboard-buttons,.dashboard-buttons i {
+	padding-top: 50px;
+	color: #404040;
+}
+
+.column-left i:hover,.column-center i:hover,.column-right i:hover {
+	color: #b7cb2c;
+}
+
+.column-left {
+	float: left;
+	width: 33%;
+	font-size: 100px;
+	text-align: center;
+}
+
+.column-center {
+	display: inline-block;
+	width: 33%;
+	font-size: 100px;
+	text-align: center;
+}
+
+.column-right {
+	float: right;
+	width: 33%;
+	font-size: 100px;
+	text-align: center;
+}
+
+.login-register {
+	float: right;
+	background-color: #b7cb2c;
+	margin-right: 25px;
+	margin-top: -2px;
+	padding: 5px;
+	width: 140px;
+	text-align: center;
+	border-radius: 3px;
+	color: #f2f5e9;
+	word-spacing: 10px;
+}
+
+.login-register a,.dashboard-button a {
+	color: #f2f5e9;
+	text-decoration: none !important;
+}
+
+span a:hover {
+	text-decoration: underline !important;
+}
+
+#full-text,bio {
+	margin-top: 50px;
+}

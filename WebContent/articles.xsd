@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.uts.edu.au/31284/wsd-news" xmlns="http://www.uts.edu.au/31284/wsd-news"
+	elementFormDefault="qualified">
+
+
+	<xs:simpleType name="title">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+			<xs:maxLength value="100" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="date">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/]\d{4}" /> <!-- Date in format dd/mm/yyyy. -->
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="category">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Sport" />
+			<xs:enumeration value="Travel" />
+			<xs:enumeration value="Politics" />
+			<xs:enumeration value="Special Interest" /> <!-- pre-defined categories only -->
+			<xs:enumeration value="Business" />
+			<xs:enumeration value="Lifestyle" />
+			<xs:enumeration value="Entertainment" />
+			<xs:enumeration value="Other" />
+			<xs:enumeration value="National" />
+			<xs:enumeration value="World" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="summary">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="50" /> <!-- minimum length of summary can be 10 characters -->
+			<xs:maxLength value="500" /> <!-- max length can be 500 characters -->
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="visibility"> <!-- 2 options for visibility, either public or authors only -->
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="restricted" />
+			<xs:enumeration value="public" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="articleImage">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(.)+\.(jpg|jpeg|png|bmp)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="articles">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="article" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="title" name="title" />
+							<xs:element type="xs:string" name="author" />
+							<xs:element type="date" name="startDate" />
+							<xs:element type="category" name="category" />
+							<xs:element type="summary" name="leadText" />
+							<xs:element type="xs:string" name="fullText" />
+							<xs:element type="visibility" name="visibility" />
+							<xs:element type="articleImage" name="articleImage" />
+						</xs:sequence>
+						<xs:attribute type="xs:positiveInteger" name="id" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

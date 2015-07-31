@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/WEB-INF/authors.xsl"?>
+
+<authors>
+	
+	<author>
+		<name>Sam Morrison</name>
+		<email>sam.morrison@utsnews.com</email>
+		<password>password</password>
+		<dob>1991-01-01</dob>
+		<bio>My name is Sam, and this is my bio!</bio>
+		<profileImage>sam.jpg</profileImage>
+	</author>
+
+	<author>
+		<name>Andrew Johnson</name>
+		<email>andrew.johnson@utsnews.com</email>
+		<password>password</password>
+		<dob>1992-02-02</dob>
+		<bio>My name is Andrew, and this is my bio!</bio>
+		<profileImage>andrew.jpg</profileImage>
+	</author>
+
+	<author>
+		<name>Stephanie Hansen</name>
+		<email>stephanie.hansen@utsnews.com</email>
+		<password>password</password>
+		<dob>1993-03-03</dob>
+		<bio>My name is Stephanie, and this is my bio!</bio>
+		<profileImage>stephanie.jpg</profileImage>
+	</author>
+	
+</authors>
